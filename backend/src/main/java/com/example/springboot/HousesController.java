@@ -1,0 +1,12 @@
+package com.example.springboot;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HousesController {
+    @GetMapping("/houses")
+	public String index() {
+		return "List of houses";
+	}
+}
